@@ -24,4 +24,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  padding: 10px;
+}
+
+.tag{
+  @apply rounded-md border-white border-2 p-1 mr-1 text-xs
 }
