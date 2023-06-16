@@ -1,35 +1,14 @@
 import Image from 'next/image'
-import Link from 'next/link';
-import Typewriter from "typewriter-effect";
+import Link from 'next/link'
+import React from 'react'
 
-const Profile = ({ theme }: {theme:string}) => {
+const Footer = ({ theme }: {theme:string}) => {
+  return (
+    <footer>
+       <div className="container mx-auto p-4">
+       <p>&copy; 2023 Developed By Leong Tin Jet. All rights reserved.</p>
 
-    return (
-        <div className='flex flex-col sm:flex-row justify-center m-3'>
-            <div>
-                <Image
-                    src={"/me.jpg"}
-                    alt={'placeholder'}
-                    width={200}
-                    height={200}
-                    className='object-contain'
-                />
-            </div>
-
-            <div className='flex flex-col m-2 p-2 align-baseline'>
-                <div className='relative z-40 '>
-                <strong><span className='text-[#778ba5] text-[48px]'>Leong Tin Jet</span></strong>
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter
-                                .pauseFor(200)
-                                .typeString("<span style='font-size:28px;'>Full Stack Web Developer</span>")
-                                .start();
-                        }}
-                    />
-                </div>
-
-                <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
+       <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
                     <div className='flex flex-row items-center p-2'>
                         {
                             theme === "light" ?
@@ -59,12 +38,24 @@ const Profile = ({ theme }: {theme:string}) => {
                             src={"/linkedin.svg"}
                             className='object-contain pr-2'
                         />
-                     <Link target="_blank" href="https://www.linkedin.com/in/tinjet">LinkedIn</Link>
+                        <Link target="_blank" href="https://www.linkedin.com/in/tinjet">LinkedIn</Link>
+                    </div>
+
+                    <div className='flex flex-row items-center'>
+                        <Image
+                            width={40}
+                            height={40}
+                            alt="instagram logo"
+                            src={"/instagram.svg"}
+                            className='object-contain'
+                        />
+                        <Link target="_blank" href="https://www.instagram.com/tinjet_11/">Instagram</Link>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
+      </div>
+    </footer>
+   
+  )
 }
 
-export default Profile
+export default Footer

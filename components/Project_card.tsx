@@ -15,7 +15,7 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
                     alt={'placeholder'}
                     width={300}
                     height={200}
-                    className='object-contain'
+                    className='object-contain self-center'
                 />
 
                 <div className='flex flex-row mt-3 gap-3 p-2'>
@@ -36,7 +36,7 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
                                     className='object-contain pr-2'
                                 />
                                 }
-                    <Link href={sourcecode} target='_blank'>
+                    <Link target="_blank" href={sourcecode}>
                         Soucecode</Link>
                 </div>
 
