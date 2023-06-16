@@ -18,7 +18,7 @@ const Experience = () => {
     ]}  
       />
 
-    <hr/>
+   {/*  <hr/>
       <Experience_card 
       organisation={'Computer Science Society | University of Nottingham Malaysia'} 
       position={'Head of Technology'} 
@@ -28,7 +28,7 @@ const Experience = () => {
         "Host Workshop about CTF",
         "Assists in other events of the society"
     ]}  
-      />
+      /> */}
 
    
     </div>
