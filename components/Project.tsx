@@ -24,9 +24,9 @@ const Project = ({ theme }: {theme:string}) => {
                     />
                       <Project_card
                         image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
+                        sourcecode="https://github.com/tinjet11/portfolio"
+                        description="My personal portfolio"
+                        tag={["Next.JS", "Typescript", "Tailwind CSS"]}
                         theme= {theme}
                     />
 
