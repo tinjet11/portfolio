@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { projectCardProps } from '@/types'
 
-const Project_card = ({ image_src, sourcecode, description, tag }: projectCardProps) => {
+const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projectCardProps) => {
+
     return (
 
         <div className='flex flex-col w-auto'>
@@ -18,13 +19,23 @@ const Project_card = ({ image_src, sourcecode, description, tag }: projectCardPr
                 />
 
                 <div className='flex flex-row mt-3 gap-3 p-2'>
-                    <Image
-                        width={25}
-                        height={25}
-                        alt="github logo white"
-                        src={"/github-white.svg"}
-                        className='object-contain'
-                    />
+                {
+                            theme === "light" ?
+                                <Image
+                                    width={25}
+                                    height={25}
+                                    alt="github logo black"
+                                    src={"/github-black.svg"}
+                                    className='object-contain pr-2'
+                                />
+                                : <Image
+                                    width={25}
+                                    height={25}
+                                    alt="github logo white"
+                                    src={"/github-white.svg"}
+                                    className='object-contain pr-2'
+                                />
+                                }
                     <Link href={sourcecode} target='_blank'>
                         Soucecode</Link>
                 </div>
@@ -41,13 +52,26 @@ const Project_card = ({ image_src, sourcecode, description, tag }: projectCardPr
 
                 {/*  Tag */}
                 <div className='flex flex-row flex-wrap mt-3'>
-                    {
-                        tag.map((tag: string, index: number) => (
-                            <div className='tag' key={index}>
-                                {tag}
-                            </div>
-                        ))
-                    };
+                {
+                        theme === "light" ?
+                        
+                            tag.map((tag: string, index: number) => (
+
+                                <div className='tag border-black' key={index}>
+                                    {tag}
+                                </div>
+                            ))
+                            
+                            :
+
+                            tag.map((tag: string, index: number) => (
+
+                                <div className='tag border-white' key={index}>
+                                    {tag}
+                                </div>
+                            ))
+
+                    }
                 </div>
 
             </div>

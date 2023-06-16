@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Project_card from './Project_card'
 
-const Project = () => {
+const Project = ({ theme }: {theme:string}) => {
     return (
         <>
             <div className='flex flex-col items-center justify-center'>
@@ -14,53 +14,21 @@ const Project = () => {
                         sourcecode="https://github.com/tinjet11/car_rental"
                         description=" A Car Rental System for admin usage"
                         tag={["HTML", "CSS", "Javascript", "PHP"]}
+                        theme= {theme}
                     />
                       <Project_card
                         image_src="/images.jpg"
                         sourcecode="https://github.com/tinjet11/car_rental"
                         description=" A Car Rental System for admin usage"
                         tag={["HTML", "CSS", "Javascript", "PHP"]}
+                        theme= {theme}
                     />
                       <Project_card
                         image_src="/images.jpg"
                         sourcecode="https://github.com/tinjet11/car_rental"
                         description=" A Car Rental System for admin usage"
                         tag={["HTML", "CSS", "Javascript", "PHP"]}
-                    />
-                      <Project_card
-                        image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
-                    />
-
-                    <Project_card
-                        image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
-                    />
-
-
-                    <Project_card
-                        image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
-                    />
-
-                    <Project_card
-                        image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
-                    />
-
-                    <Project_card
-                        image_src="/images.jpg"
-                        sourcecode="https://github.com/tinjet11/car_rental"
-                        description=" A Car Rental System for admin usage"
-                        tag={["HTML", "CSS", "Javascript", "PHP"]}
+                        theme= {theme}
                     />
 
                 </div>

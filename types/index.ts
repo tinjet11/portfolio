@@ -3,4 +3,5 @@ export interface projectCardProps{
     sourcecode:string,
     description:string,
     tag: string[],
+    theme:string
 }
