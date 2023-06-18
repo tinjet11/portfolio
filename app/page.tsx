@@ -9,6 +9,7 @@ import Profile from '@/components/Profile';
 import { useTheme } from "next-themes";
 import Experience from '@/components/Experience';
 import Footer from '@/components/Footer';
+import Skills from '@/components/Skills';
 
 
 export default function Home() {
@@ -31,11 +32,12 @@ export default function Home() {
     <>
     <div className='container'>
       <Nav />
-      <Profile theme={currentTheme} />
+      <Profile />
       <Experience />
+      <Skills/>
       <Project theme={currentTheme} />
 
-      <Footer theme={currentTheme}/>
+      <Footer/>
       </div>
     </>
   )

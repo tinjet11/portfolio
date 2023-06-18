@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { projectCardProps } from '@/types'
+import { Icons } from './icons'
 
 const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projectCardProps) => {
 
@@ -19,31 +20,16 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
                 />
 
                 <div className='flex flex-row mt-3 gap-3 p-2'>
-                {
-                            theme === "light" ?
-                                <Image
-                                    width={25}
-                                    height={25}
-                                    alt="github logo black"
-                                    src={"/github-black.svg"}
-                                    className='object-contain pr-2'
-                                />
-                                : <Image
-                                    width={25}
-                                    height={25}
-                                    alt="github logo white"
-                                    src={"/github-white.svg"}
-                                    className='object-contain pr-2'
-                                />
-                                }
-                    <Link target="_blank" href={sourcecode}>
-                        Soucecode</Link>
+            <Icons.gitHub className='h-6 w-6' />
+                    <a target="_blank" href={sourcecode}>
+                    sourceCode</a>
+                        
                 </div>
 
 
                 {/*  project description */}
 
-                <h1 className='font-bold text-lg'>Project Description</h1>
+                <h1 className='font-bold text-lg text-[#778ba5]'>Project Description</h1>
                 <p>
                     {description}
                 </p>
@@ -52,7 +38,7 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
 
                 {/*  Tag */}
                 <div className='flex flex-row flex-wrap mt-3'>
-                {
+{/*                 {
                         theme === "light" ?
                         
                             tag.map((tag: string, index: number) => (
@@ -71,6 +57,15 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
                                 </div>
                             ))
 
+                    } */}
+
+                    {
+                         tag.map((tag: string, index: number) => (
+
+                            <div className='tag border-gold' key={index}>
+                                {tag}
+                            </div>
+                        ))
                     }
                 </div>
 

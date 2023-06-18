@@ -42,3 +42,11 @@ body {
   padding-left: 15px; /* Adjust the padding as per your design */
   padding-right: 15px; /* Adjust the padding as per your design */
 }
+
+table,tbody,thead, th,td {
+  @apply p-[15px] text-center border border-[#778ba5]
+}
+
+tbody tr:hover {
+  @apply bg-gray-600
+}

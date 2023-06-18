@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import Typewriter from "typewriter-effect";
+import { Icons } from './icons';
 
-const Profile = ({ theme }: {theme:string}) => {
+const Profile = () => {
 
     return (
         <div className='flex flex-col sm:flex-row justify-center m-3'>
@@ -18,7 +19,7 @@ const Profile = ({ theme }: {theme:string}) => {
 
             <div className='flex flex-col m-2 p-2 align-baseline'>
                 <div className='relative z-40 '>
-                <strong><span className='text-[#778ba5] text-[48px]'>Leong Tin Jet</span></strong>
+                    <strong><span className='text-[#778ba5] text-[48px]'>Leong Tin Jet</span></strong>
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
@@ -30,36 +31,14 @@ const Profile = ({ theme }: {theme:string}) => {
                 </div>
 
                 <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
-                    <div className='flex flex-row items-center p-2'>
-                        {
-                            theme === "light" ?
-                                <Image
-                                    width={25}
-                                    height={25}
-                                    alt="github logo white"
-                                    src={"/github-black.svg"}
-                                    className='object-contain pr-2'
-                                />
-                                : <Image
-                                    width={25}
-                                    height={25}
-                                    alt="github logo white"
-                                    src={"/github-white.svg"}
-                                    className='object-contain pr-2'
-                                />
-                                }
+                    <div className='flex flex-row items-center gap-1'>
+                        <Icons.gitHub className="h-6 w-6"/>
                         <Link target="_blank" href="https://github.com/tinjet11">Github</Link>
 
                     </div>
-                    <div className='flex flex-row  items-center'>
-                        <Image
-                            width={25}
-                            height={25}
-                            alt="linkedin logo"
-                            src={"/linkedin.svg"}
-                            className='object-contain pr-2'
-                        />
-                     <Link target="_blank" href="https://www.linkedin.com/in/tinjet">LinkedIn</Link>
+                    <div className='flex flex-row  items-center gap-1'>
+                        <Icons.linkedin />
+                        <Link target="_blank" href="https://www.linkedin.com/in/tinjet">LinkedIn</Link>
                     </div>
                 </div>
             </div>
