@@ -22,7 +22,7 @@ const Project_card = ({ image_src, sourcecode, description, tag ,theme }: projec
                 <div className='flex flex-row mt-3 gap-3 p-2'>
             <Icons.gitHub className='h-6 w-6' />
                     <a target="_blank" href={sourcecode}>
-                    sourceCode</a>
+                    SourceCode</a>
                         
                 </div>
 

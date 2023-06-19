@@ -1,15 +1,14 @@
-
 "use client"
-
+import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
+import './globals.css';
 import Nav from '@/components/Nav';
 import Project from '@/components/Project';
-import './globals.css';
 import Profile from '@/components/Profile';
-import { useTheme } from "next-themes";
 import Experience from '@/components/Experience';
 import Footer from '@/components/Footer';
 import Skills from '@/components/Skills';
+import { Icons } from "@/components/icons";
 
 
 export default function Home() {
@@ -24,20 +23,21 @@ export default function Home() {
   }, [theme]);
 
   if (loading) {
-    return <div>
-      </div>;
+    return <div className="flex justify-center items-center h-screen">
+      <Icons.loader />
+    </div>
   }
 
   return (
     <>
-    <div className='container'>
-      <Nav />
-      <Profile />
-      <Experience />
-      <Skills/>
-      <Project theme={currentTheme} />
+      <div className='container'>
+        <Nav />
+        <Profile />
+        <Experience />
+        <Skills />
+        <Project theme={currentTheme} />
 
-      <Footer/>
+        <Footer />
       </div>
     </>
   )

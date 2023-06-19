@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Skills = () => {
@@ -79,6 +80,9 @@ const Skills = () => {
                 </tbody>
             </table>
             </div>
+           {/*  <Link href='/blog/1'>Blog 1</Link>
+            <Link href='/blog/2'>Blog 2</Link>
+            <Link href='/blog/3'>Blog 3</Link> */}
         </div>
 
     )
