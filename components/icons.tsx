@@ -5,6 +5,8 @@ import {
     Moon,
     Sun,
     Loader,
+    MailCheck,
+    ScreenShare,
     type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -16,6 +18,8 @@ export const Icons = {
     moon: Moon,
     sun: Sun,
     loader: Loader,
+    mail: MailCheck,
+    livedemo: ScreenShare,
     gitHub: ({ ...props }: LucideProps) => (
         <svg
             aria-hidden="true"

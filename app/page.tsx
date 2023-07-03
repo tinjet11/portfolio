@@ -14,7 +14,7 @@ import { Icons } from "@/components/icons";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const { theme } = useTheme();
-  const currentTheme = theme || "light"; // Use "light" as the default value if theme is undefined
+  const currentTheme = theme || "light-grey"; // Use "light" as the default value if theme is undefined
 
   useEffect(() => {
     if (theme !== undefined) {
@@ -23,7 +23,10 @@ export default function Home() {
   }, [theme]);
 
   if (loading) {
-    return <div className="flex justify-center items-center h-screen">
+    return <div className="flex flex-col justify-center items-center h-screen">
+      <h1>Please be patient </h1>
+      <br/>
+
       <Icons.loader />
     </div>
   }

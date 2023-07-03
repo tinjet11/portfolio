@@ -6,25 +6,15 @@ import { Icons } from './icons';
 const Profile = () => {
 
     return (
-        <div className='flex flex-col sm:flex-row justify-center m-3'>
-            <div>
-                <Image
-                    src={"/me.jpg"}
-                    alt={'placeholder'}
-                    width={200}
-                    height={200}
-                    className='object-contain'
-                />
-            </div>
-
+        <div className='flex flex-col sm:flex-row m-3' id='profile'>
             <div className='flex flex-col m-2 p-2 align-baseline'>
                 <div className='relative z-40 '>
-                    <strong><span className='text-[#778ba5] text-[48px]'>Leong Tin Jet</span></strong>
+                    <strong><span className='text-[#968888] text-[48px]'>Leong Tin Jet</span></strong>
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter
                                 .pauseFor(200)
-                                .typeString("<span style='font-size:28px;'>Full Stack Web Developer</span>")
+                                .typeString("<span style='font-size:28px; font-weight: bold;'>Full Stack Web Developer</span>")
                                 .start();
                         }}
                     />

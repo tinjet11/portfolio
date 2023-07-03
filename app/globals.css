@@ -5,20 +5,36 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 
-body {
-  @apply font-mono
-}
+
 
 [data-theme="dark"] body {
-  background-color: #000;
-  color: white;
+  background-color: #262626;
+  color: #dbdbdb;
 }
 
-.tag{
-  @apply rounded-md border-2 p-1 mr-1 text-xs 
+[data-theme="dark"] .card {
+@apply shadow-white
 }
 
-.nav_right_item{
+[data-theme="light-grey"] body {
+  background-color: rgb(218, 211, 211);
+  color: #312f2f;
+}
+
+.header-1 {
+  @apply font-bold text-4xl capitalize h-12
+}
+
+.header-2 {
+  @apply font-bold text-xl text-[#98a498]
+}
+
+
+.tag {
+  @apply rounded-md border-2 p-1 mr-1 text-xs
+}
+
+.nav_right_item {
   @apply flex flex-row ml-auto gap-4 mr-2 p-2
 }
 
@@ -35,15 +51,22 @@ body {
   background: green;
 }
 
-.container{
-  max-width: 1140px; /* Adjust the maximum width as per your design */
+.container {
+  max-width: 1140px;
+  /* Adjust the maximum width as per your design */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px; /* Adjust the padding as per your design */
-  padding-right: 15px; /* Adjust the padding as per your design */
+  padding-left: 15px;
+  /* Adjust the padding as per your design */
+  padding-right: 15px;
+  /* Adjust the padding as per your design */
 }
 
-table,tbody,thead, th,td {
+table,
+tbody,
+thead,
+th,
+td {
   @apply p-[15px] text-center border border-[#778ba5]
 }
 
