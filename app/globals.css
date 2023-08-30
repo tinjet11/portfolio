@@ -51,25 +51,4 @@
   background: green;
 }
 
-.container {
-  max-width: 1140px;
-  /* Adjust the maximum width as per your design */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  /* Adjust the padding as per your design */
-  padding-right: 15px;
-  /* Adjust the padding as per your design */
-}
 
-table,
-tbody,
-thead,
-th,
-td {
-  @apply p-[15px] text-center border border-[#778ba5]
-}
-
-tbody tr:hover {
-  @apply bg-gray-600
-}

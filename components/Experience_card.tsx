@@ -22,8 +22,8 @@ const Experience_card = ({ organisation, position, date, description }: experien
             {/*description */}
             <div className="mb-4">
                 <ul className="list-disc list-inside">
-                    {description.map((desc) => (
-                        <li>{desc}</li>
+                    {description.map((desc,index) => (
+                        <li key={index}>{desc}</li>
                     ))}
                 </ul>
             </div>

@@ -6,7 +6,6 @@ import { Icons } from './icons'
 const Footer = () => {
     return (
         <footer>
-            <div className="container mx-auto p-4">
                 <p>&copy; 2023 Developed By Leong Tin Jet. All rights reserved.</p>
 
                 <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
@@ -31,7 +30,7 @@ const Footer = () => {
                         <Link target="_blank" href="https://www.instagram.com/tinjet_11/">Instagram</Link>
                     </div>
                 </div>
-            </div>
+
         </footer>
 
     )

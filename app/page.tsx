@@ -33,15 +33,15 @@ export default function Home() {
 
   return (
     <>
-      <div className='container'>
+      
         <Nav />
         <Profile />
         <Experience />
         <Skills />
-        <Project theme={currentTheme} />
+        <Project />
 
         <Footer />
-      </div>
+    
     </>
   )
 }

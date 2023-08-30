@@ -33,7 +33,7 @@ const Nav = () => {
             <div className={`flex flex-row m-1 p-3 top-0 sticky z-50`}>
                 <div className='flex flex-row items-center gap-1 '>
 
-                    <button
+                  {/*   <button
                         className="transition-all duration-300 bg-[#98a498] text-white font-bold py-2 px-4 rounded"
                         onClick={expand}
                     >Menu</button>
@@ -46,34 +46,34 @@ const Nav = () => {
                             </button>
                             <ul className="text-[#393737] text-bold text-3xl p-3">
                                 <li>
-                                    <a href="#profile" className="block text-center py-2" onClick={expand}>
+                                    <a href="#profile" className="block py-2" onClick={expand}>
                                         <p className="text-bold text-2xl">Profile</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#experience" className="block text-center py-2" onClick={expand}>
+                                    <a href="#experience" className="block py-2" onClick={expand}>
                                         <p className="text-bold text-2xl">Experience</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#skills" className="block text-center py-2" onClick={expand}>
+                                    <a href="#skills" className="block py-2" onClick={expand}>
                                         <p className="text-bold text-2xl">Skills</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#projects" className="block text-center py-2" onClick={expand}>
+                                    <a href="#projects" className="block py-2" onClick={expand}>
                                         <p className="text-bold text-2xl">Projects</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#contact-me" className="block text-center py-2" onClick={expand}>
+                                    <a href="#contact-me" className="block py-2" onClick={expand}>
                                         <p className="text-bold text-2xl">Contact Me</p>
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                    )}
+                    )} */}
                 </div>
                 <div className="nav_right_item">
                     <div className='flex flex-row items-center gap-1 '>

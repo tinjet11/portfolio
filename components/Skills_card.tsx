@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import React from 'react'
+import Marquee from "react-fast-marquee";
 
 type Props = {
     title: string,
@@ -7,14 +9,24 @@ type Props = {
 
 const Skills_card = ({ title, contents }: Props) => {
     return (
-        <div className="rounded-lg shadow-lg p-6 mb-2 flex flex-col w-full justify-start">
-            <h2 className="header-2">{title}</h2>
-            <ul className="list-inside list-disc">
-                {contents.map((content) => (
-                    <li key={content}>{content}</li>
+        <div className="rounded-lg p-6 mb-4 flex flex-col w-full">
+       {/*      <h2 className="text-2xl font-semibold mb-2">{title}</h2> */}
+            <Marquee speed={20}>
+                {contents.map((content, index) => (
+                    <Image 
+                    key={index}
+                    src={content}
+                    width={200}
+                    height={200}
+                    className='mx-1'
+                    alt='Programing language logo'
+                    />
                 ))}
-            </ul>
+
+            </Marquee>
+
         </div>
+
     )
 }
 

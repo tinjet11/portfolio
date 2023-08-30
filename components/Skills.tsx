@@ -1,57 +1,63 @@
-import Link from 'next/link'
 import React from 'react'
 import Skills_card from './Skills_card'
 
+
+/* https://devicon.dev/ */
+const skill_content = [
+    {
+        title: "Programming Languages",
+        contents: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg",
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+            'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+        ]
+    },
+    /*   {
+          title: "Web Develoment",
+          contents: [
+              'NextJs',
+              'React',
+              'HTML',
+              'CSS',
+              'Tailwind CSS',
+          ],
+      },
+      {
+          title: "Mobile App Development",
+          contents: ["Flutter","Dart","Flutter Clean Architeture","Bloc"]
+      } */
+]
 const Skills = () => {
     return (
-        <div className="container mx-auto p-4" id='skills'>
-            <h1 className="text-center header-1 mb-3">Skills</h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2 pb-5'>
+        <>
+            <h1 className="text-left header-1 mb-3">Skills</h1>
+            <div className='flex-col mb-2 pb-5'>
+                {
+                    skill_content.map((item,index) => (
+                        <Skills_card
+                        key={index}
+                            title={item.title}
+                            contents={item.contents}
+                        />
+                    ))
+                }
 
-                <Skills_card
-                    title={'Programming Languages'}
-                    contents={[
-                        'Javascript',
-                        'Typescript',
-                        'PHP',
-                        'SQL',
-                        'Java',
-                        'C',
-                    ]}
-                />
-
-
-
-                <Skills_card
-                    title={'Frontend'}
-                    contents={[
-                        'Next.js',
-                        'React',
-                        'HTML',
-                        'CSS',
-                        'Tailwind CSS',
-                        // Add more frontend frameworks or libraries here
-                    ]}
-                />
-
-
-
-                <Skills_card
-                    title={'Backend'}
-                    contents={['To be learned...']}
-                />
-
-
-
-                <Skills_card
-                    title={'Mobile App Development'}
-                    contents={['Dart', 'Flutter']}
-                />
-
+    
             </div>
-        </div>
+        </>
+
 
     )
 }
 
 export default Skills
+
