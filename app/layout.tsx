@@ -16,11 +16,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Providers>
-          <div className="container mx-auto p-4">
+          <div className="mx-auto p-4">
             {children}
           </div>
-        </Providers>
       </body>
     </html>
   )

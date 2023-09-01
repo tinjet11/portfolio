@@ -4,7 +4,7 @@ import Experience_card from './Experience_card'
 const Experience = () => {
   return (
 
-    <div className="flex-col my-8" id='experience'>
+    <div className="flex-col my-8 p-2" id='experience'>
       <h1 className="text-left font-bold text-4xl capitalize mb-4">Experience</h1>
 
       <Experience_card 

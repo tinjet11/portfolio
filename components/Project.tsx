@@ -34,7 +34,7 @@ const Project = () => {
 
     return (
         <>
-            <div className='mt-4'>
+            <div className='mt-4 p-2'>
 
                 <h1 className='text-left header-1 my-3'>Project</h1>
                 <div className="flex items-center gap-4 p-3 rounded-lg sm:border-2 border-[#183f2c]">

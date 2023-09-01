@@ -17,7 +17,7 @@ export interface projectCardProps {
 const Project_card = ({ sourcecode, livedemo, title, tag, feature, cover }: projectCardProps) => {
 
     return (
-        <div className="flex flex-col min-w-[300px] max-w-[500px] rounded-xl p-6 mb-3">
+        <div className="flex flex-col min-w-[300px] max-w-[500px] rounded-xl p-6 mb-1">
             <div className="flex flex-col m-2 p-2">
                 <div className="flex flex-col sm:flex-row p-2">
                     <div className="flex-col justify-evenly ml-4">

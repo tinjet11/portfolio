@@ -6,13 +6,13 @@ import { Mail } from 'lucide-react'
 
 const Footer = () => {
     return (
-        <footer>
-            <p>&copy; 2023 Developed By Leong Tin Jet. All rights reserved.</p>
+        <footer className='py-4 mt-8'>
+            <p className='text-center'>&copy; 2023 Developed By Leong Tin Jet. All rights reserved.</p>
 
-            <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
+           {/*  <div className='flex flex-row justify-end mt-auto p-2 gap-2'>
                 <div className='flex flex-row items-center gap-1'>
                     <Mail className="h-6 w-6" />
-                    <Link target="_blank" href="mailto:tinjet1016@gmail.com" className='underline'>tinjet1016@gmail.com</Link>
+                    <Link target="_blank" href="mailto:tinjet1016@gmail.com" className='hover:underline'>Email</Link>
                 </div>
                 <div className='flex flex-row items-center gap-1'>
                     <Icons.gitHub className='h-6 w-6' />
@@ -34,7 +34,7 @@ const Footer = () => {
                     />
                     <Link target="_blank" href="https://www.instagram.com/tinjet_11/">Instagram</Link>
                 </div>
-            </div>
+            </div> */}
 
         </footer>
 

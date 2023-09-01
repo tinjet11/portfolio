@@ -35,7 +35,7 @@ const Profile = () => {
                 <div className='flex flex-row justify-end mt-8 p-2 gap-2'>
                 <div className='flex flex-row items-center gap-1'>
                         <Mail className="h-6 w-6" />
-                        <Link target="_blank" href="mailto:tinjet1016@gmail.com" className='underline'>tinjet1016@gmail.com</Link>
+                        <Link target="_blank" href="mailto:tinjet1016@gmail.com" className='underline'>Email</Link>
                     </div>
                     <div className='flex flex-row items-center gap-1'>
                         <Icons.gitHub className="h-6 w-6" />
