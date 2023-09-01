@@ -10,7 +10,7 @@ const Experience_card = ({ organisation, position, date, description }: experien
             </div>
 
             {/*position */}
-            <div className="font-bold text-xl mb-1 text-[#98a498]">
+            <div className="font-bold text-xl mb-1 text-[#43b1b1]">
                 {position}
             </div>
 

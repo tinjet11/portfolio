@@ -81,7 +81,7 @@ const Nav = () => {
                         <a href={"me.jpg"} download>Resume</a>
                     </div>
 
-                    <div className='flex flex-row items-center gap-1'>
+               {/*      <div className='flex flex-row items-center gap-1'>
                         {
                             theme === "light-grey" ?
                                 <Icons.sun /> : <Icons.moon />
@@ -89,7 +89,7 @@ const Nav = () => {
                         <button onClick={() => theme === "light-grey" ? setTheme("dark") : setTheme("light-grey")}>
                             Theme
                         </button>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

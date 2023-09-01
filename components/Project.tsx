@@ -5,72 +5,11 @@ import Project_card from './Project_card'
 import { useRouter } from 'next/navigation'
 import { CheckIcon, ChevronDownIcon, ChevronUpIcon, Filter } from 'lucide-react'
 import { Listbox, Transition } from '@headlessui/react'
+import { projects, type } from './constant'
 
 
-type projectsProps = {
-    title: string,
-    sourcecode: string,
-    livedemo?: string,
-    feature?: string[],
-    tag: string[],
-    cover: "/project/computer.svg" | "/project/mobile.svg",
-    type: "Web" | "Mobile"
-}
-
-const projects: projectsProps[] = [
-    {
-        title: "Official website of Computer Science Society of University of Nottingham Malaysia(UNM CSS)",
-        sourcecode: "https://github.com/UoN-Computer-Science-Society/",
-        livedemo: 'https://unmcss.com',
-        feature: ['VS-Code Theme', 'Showcase upcoming event,previous event', 'FAQ section', 'Email subscription',],
-        tag: ["Next.js", "Typescript", "Tailwind CSS"],
-        cover: "/project/computer.svg",
-        type: "Web"
-    },
-    {
-        title: "Admin Dashboard for UNM CSS Official Website ",
-        sourcecode: "https://github.com/UoN-Computer-Science-Society/",
-        livedemo: 'https://dashboard.unmcss.com',
-        feature: ['Simple dashboard design', 'Image Uploading', 'User Authentication using Clerk', 'Manage annoucement,committee,position open,upcoming event,previous event,partners,faq'],
-        tag: ["Next.js", "Typescript", "Tailwind CSS", "Prisma"],
-        cover: "/project/computer.svg",
-        type: "Web"
-    },
-    {
-        title: "My personal portfolio",
-        sourcecode: "https://github.com/tinjet11/portfolio",
-        livedemo: 'https://tinjet.vercel.app',
-        feature: ["Introduction about me", "Showcase my skills", "Showcase my projects", "Showcase my experience"],
-        tag: ["Next.JS", "Typescript", "Tailwind CSS"],
-        cover: "/project/computer.svg",
-        type: "Web"
-    },
-    {
-        title: 'Premium Car Rental Booking Website',
-        sourcecode: "https://github.com/tinjet11/car_rental",
-        tag: ["HTML", "CSS", "Javascript", "PHP"],
-        cover: "/project/computer.svg",
-        type: "Web"
-    },
-    {
-        title: 'Product Price Checking App ',
-        sourcecode: "https://github.com/tinjet11/telecell_price_checker",
-        feature: ["Effortless Price Lookup", "Comprehensive Product Insights", "substantial improvement in business efficiency", " empowering sales personnel to promptly retrieve essential product details", " streamlining operations and reducing communication delays"],
-        tag: ["Flutter", "Mobile APP Development", "Clean architeture", "Bloc", "Dart"],
-        cover: "/project/mobile.svg",
-        type: "Mobile"
-    }
-]
-
-
-const type = [
-    { id: 0, name: "All", value: "type=All" },
-    { id: 1, name: "Web", value: "type=Web" },
-    { id: 2, name: "Mobile", value: "type=Mobile" },
-]
 
 const Project = () => {
-
     const router = useRouter();
     const [params, setParams] = useState("type=All");
     const [isOpen, setIsOpen] = useState(false);
@@ -93,22 +32,20 @@ const Project = () => {
         router.push(newPathName);
     }
 
-
-
     return (
         <>
             <div className='mt-4'>
 
                 <h1 className='text-left header-1 my-3'>Project</h1>
-                <div className="flex items-center gap-4 p-3 rounded-lg sm:border-2">
+                <div className="flex items-center gap-4 p-3 rounded-lg sm:border-2 border-[#183f2c]">
                     <div className="flex items-center gap-2">
                         <Filter className="w-5 h-5" />
                         Filter
                     </div>
 
-                    <button className={`${params !== "type=All" ? 'text-gray-500' : ''} sm:block hidden font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("All")}>All</button>
-                    <button className={`${params !== "type=Web" ? 'text-gray-500' : ''} sm:block hidden  font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("Web")}>Web Development</button>
-                    <button className={`${params !== "type=Mobile" ? 'text-gray-500' : ''} sm:block hidden  font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("Mobile")}>Mobile App Development</button>
+                    <button className={`${params === "type=All" ? 'text-[#43b1b1]' : 'text-[#a5afb9]'} sm:block hidden font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("All")}>All</button>
+                    <button className={`${params === "type=Web" ? 'text-[#43b1b1]' : 'text-[#a5afb9]'} sm:block hidden  font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("Web")}>Web Development</button>
+                    <button className={`${params === "type=Mobile" ? 'text-[#43b1b1]' : 'text-[#a5afb9]'} sm:block hidden  font-semibold hover:underline focus:outline-none`} onClick={() => handleUpdateParams("Mobile")}>Mobile App Development</button>
 
                     <div className='w-fit sm:hidden block'>
                         <Listbox
@@ -129,7 +66,7 @@ const Project = () => {
                                         {type.map((item) => (
                                             <Listbox.Option
                                                 key={item.id}
-                                                className="relative cursor-default select-none py-2 px-4 text-gray-900 hover:bg-blue-300"
+                                                className="relative cursor-default select-none py-2 px-4 text-gray-900 hover:bg-[#43b1b1]"
                                                 onClick={() => handleUpdateParams(item.name)}
                                                 value={item.value}
                                             >

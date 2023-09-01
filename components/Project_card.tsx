@@ -27,7 +27,7 @@ const Project_card = ({ sourcecode, livedemo, title, tag, feature, cover }: proj
                             height={200}
                             alt='Cover img'
                         />
-                        <p className="text-lg font-semibold">{title}</p>
+                        <p className="text-lg font-semibold text-[#43b1b1]">{title}</p>
                         <div className="flex flex-row mt-3 gap-3 py-2 justify-start">
                             <div className="flex flex-row gap-2">
                                 <Icons.gitHub className="h-6 w-6" />
@@ -57,7 +57,7 @@ const Project_card = ({ sourcecode, livedemo, title, tag, feature, cover }: proj
                         }
                         <div className="flex flex-row flex-wrap mt-3">
                             {tag.map((tag, index) => (
-                                <div className="tag border-gold py-1 px-2 rounded-full mr-2 mb-2" key={index}>
+                                <div className="tag border-[#183f2c] py-1 px-2 rounded-full mr-2 mb-2" key={index}>
                                     {tag}
                                 </div>
                             ))}

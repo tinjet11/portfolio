@@ -2,18 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* primary- #43b1b1
+secondary - #cfdeed
+accent- #183f2c
+https://realtimecolors.com/?colors=000000-ffffff-43b1b1-cfdeed-183f2c */
 
-[data-theme="dark"] body {
-  background-color: #262626;
-  color: #dbdbdb;
-}
-
-[data-theme="dark"] .card {
-@apply shadow-white
-}
 
 [data-theme="light-grey"] body {
-  background-color: rgb(218, 211, 211);
+  background-color: white;
   color: #312f2f;
 }
 
@@ -22,7 +18,7 @@
 }
 
 .header-2 {
-  @apply font-bold text-xl text-[#98a498]
+  @apply font-bold text-xl text-[#43b1b1]
 }
 
 
