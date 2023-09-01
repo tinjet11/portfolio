@@ -11,7 +11,7 @@ const Skills_card = ({ title, contents }: Props) => {
     return (
         <div className="rounded-lg p-6 mb-4 flex flex-col w-full">
        {/*      <h2 className="text-2xl font-semibold mb-2">{title}</h2> */}
-            <Marquee speed={20}>
+            <Marquee speed={40}>
                 {contents.map((content, index) => (
                     <Image 
                     key={index}

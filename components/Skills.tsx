@@ -38,9 +38,9 @@ const skill_content = [
 ]
 const Skills = () => {
     return (
-        <>
+        <div className='mt-4'>
             <h1 className="text-left header-1 mb-3">Skills</h1>
-            <div className='flex-col mb-2 pb-5'>
+            <div className='flex-col mb-2 pb-3'>
                 {
                     skill_content.map((item,index) => (
                         <Skills_card
@@ -50,10 +50,8 @@ const Skills = () => {
                         />
                     ))
                 }
-
-    
             </div>
-        </>
+        </div>
 
 
     )
