@@ -14,7 +14,7 @@ export const projects: projectsProps[] = [
         sourcecode: "https://github.com/UoN-Computer-Science-Society/",
         livedemo: 'https://unmcss.com',
         feature: ['VS-Code Theme', 'Showcase upcoming event,previous event', 'FAQ section', 'Email subscription',],
-        tag: ["Next.js", "Typescript", "Tailwind CSS","Figma","SEO"],
+        tag: ["Next.js", "Typescript", "Tailwind CSS", "Figma", "SEO"],
         cover: "/project/computer.svg",
         type: "Web"
     },
@@ -23,7 +23,7 @@ export const projects: projectsProps[] = [
         sourcecode: "https://github.com/UoN-Computer-Science-Society/",
         livedemo: 'https://dashboard.unmcss.com',
         feature: ['Simple dashboard design', 'Image Uploading', 'User Authentication using Clerk', 'Manage annoucement,committee,position open,upcoming event,previous event,partners,faq'],
-        tag: ["Next.js", "Typescript", "Tailwind CSS", "Prisma","Shadcn/ui","API"],
+        tag: ["Next.js", "Typescript", "Tailwind CSS", "Prisma", "Shadcn/ui", "API"],
         cover: "/project/computer.svg",
         type: "Web"
     },
@@ -32,18 +32,29 @@ export const projects: projectsProps[] = [
         sourcecode: "https://github.com/tinjet11/portfolio",
         livedemo: 'https://tinjet.vercel.app',
         feature: ["Introduction about me", "Showcase my skills", "Showcase my projects", "Showcase my experience"],
-        tag: ["Next.JS", "Typescript", "Tailwind CSS","HeadlessUi"],
+        tag: ["Next.JS", "Typescript", "Tailwind CSS", "HeadlessUi"],
         cover: "/project/computer.svg",
         type: "Web"
     },
     {
         title: 'Premium Car Rental Booking Website',
         sourcecode: "https://github.com/tinjet11/car_rental",
-        feature:["Add,Update & Delete Car Rental",
-        "Add,Update & Delete Car Information",
-        "Add,Update & Delete Customer Information",
-        "Simple Dashboard for information summary"],
+        feature: ["Add,Update & Delete Car Rental",
+            "Add,Update & Delete Car Information",
+            "Add,Update & Delete Customer Information",
+            "Simple Dashboard for information summary"],
         tag: ["HTML", "CSS", "Javascript", "PHP"],
+        cover: "/project/computer.svg",
+        type: "Web"
+    },
+    {
+        title: 'BookStore (Tutorial-MERN Stack)',
+        sourcecode: "",
+        feature: ["Add Book Info",
+            "Edit Book Info",
+            "Delete Book Info",
+            "Table and card view for book info"],
+        tag: ["React", "Express", "Javascript", "Typescript", "Api", "MongoDB", "Node.Js","Tailwind CSS","Vite"],
         cover: "/project/computer.svg",
         type: "Web"
     },
