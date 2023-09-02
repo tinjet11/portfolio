@@ -54,7 +54,7 @@ export const projects: projectsProps[] = [
             "Edit Book Info",
             "Delete Book Info",
             "Table and card view for book info"],
-        tag: ["React", "Express", "Javascript", "Typescript", "Api", "MongoDB", "Node.Js","Tailwind CSS","Vite"],
+        tag: ["React", "Express", "Javascript", "Typescript", "Api", "MongoDB", "Node.Js", "Tailwind CSS", "Vite"],
         cover: "/project/computer.svg",
         type: "Web"
     },
@@ -94,6 +94,11 @@ export const skill_content = [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg",
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+          
+
         ]
     },
     /*   {
