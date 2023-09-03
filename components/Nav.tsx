@@ -78,7 +78,7 @@ const Nav = () => {
                 <div className="nav_right_item">
                     <div className='flex flex-row items-center gap-1 '>
                         <Icons.download />
-                        <a href={"me.jpg"} download>Resume</a>
+                        <a href={"/Resume-Leong-Tin-Jet-web-3-9-2023.pdf"} download>Resume</a>
                     </div>
 
                {/*      <div className='flex flex-row items-center gap-1'>
