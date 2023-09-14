@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import React from 'react'
 import { Icons } from "./icons";
+import Link from "next/link";
 
 
 
@@ -78,7 +79,7 @@ const Nav = () => {
                 <div className="nav_right_item">
                     <div className='flex flex-row items-center gap-1 '>
                         <Icons.download />
-                        <a href={"/Resume-Leong-Tin-Jet-web-3-9-2023.pdf"} download>Resume</a>
+                        <Link href={"/LeongTinJetResume.pdf"} target="_blank">Resume</Link>
                     </div>
 
                {/*      <div className='flex flex-row items-center gap-1'>
