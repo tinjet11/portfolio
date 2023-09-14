@@ -97,23 +97,52 @@ export const skill_content = [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
-          
-
-        ]
+        ],
     },
-    /*   {
-          title: "Web Develoment",
-          contents: [
-              'NextJs',
-              'React',
-              'HTML',
-              'CSS',
-              'Tailwind CSS',
-          ],
-      },
-      {
-          title: "Mobile App Development",
-          contents: ["Flutter","Dart","Flutter Clean Architeture","Bloc"]
-      } */
 ]
 
+export const skill_content_text = 
+    [
+     'NextJs',
+     'React',
+     'HTML',
+     'CSS',
+     'Tailwind CSS',
+     "Flutter",
+     "Dart",
+     "Flutter Clean Architeture",
+     "Bloc",
+     "C",
+     "Express",
+     "MongoDB",
+     "Rest API",
+     "JavaScript",
+     "Typescript",
+     "Java",
+     "NodeJs",
+     "PHP",
+
+    ]
+    
+export const experience = [
+    {
+        organisation: 'Computer Science Society | University of Nottingham Malaysia',
+        position: 'Head of Technology',
+        date: 'May 2023 – Present',
+        description: [
+            "Tech leader of Society Website & Nott A Student App",
+            "Assists in other events of the society"
+        ],
+    },
+    {
+        organisation: 'Telecell Marketing & Services | Miri, Sarawak',
+        position: 'Freelance Flutter Developer',
+        date: 'August 2023 – September 2023',
+        description: [
+            "Successfully reduced operational time by eliminating the need for phone calls or messaging with the office admin for product price inquiries.",
+            "Collaborated closely with the outstation sales team to comprehend requirements and devised a solution that effectively solved the pricing challenge.",
+            "Contributed to increased efficiency by providing real-time access to product prices, resulting in streamlined business processes.",
+        ],
+    }
+
+]
