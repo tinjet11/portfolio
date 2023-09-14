@@ -3,7 +3,7 @@ import React from 'react'
 
 const Experience_card = ({ organisation, position, date, description }: experienceCardProps) => {
     return (
-        <div className='mt-3 '>
+        <div className='my-3'>
             {/*organisation */}
             <div className="font-bold text-lg mb-1">
                 {organisation}
