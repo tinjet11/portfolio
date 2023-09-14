@@ -4,7 +4,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div className='mt-4 p-2'>
-            <h1 className="text-left header-1 mb-3">Lets connect</h1>
+            <h1 className="text-left header-1 mb-3">Let's connect</h1>
             <div className="flex flex-col space-y-2">
                 <div className="flex items-center">
                     <span className="mr-2 font-semibold text-lg">Email:</span>

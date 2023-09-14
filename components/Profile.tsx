@@ -29,8 +29,8 @@ const Profile = () => {
                     development and strive to stay updated with the latest technology. I am both <span className='text-[#43b1b1]'>task-oriented and
                     self-driven</span>. I find a sense of fulfillment in achieving goals and constructing projects.
                     My interest also extends to AI, and I am eager to delve deeper into the subject during my second-year
-                    journey. Currently, I am seeking for an <span className='text-[#43b1b1]'>internship</span> as a software developer or mobile application developer
-                    for the <span className='text-[#43b1b1]'>summer of 2024</span>.
+                    journey. Currently, I am seeking for an <span className='text-[#43b1b1]'>3 month internship</span> as a software developer or mobile application developer
+                    for the <span className='text-[#43b1b1]'>summer of 2024 (June 2024)</span>. DM me for internship opportunity!
                 </p>
                 <div className='flex flex-row justify-end mt-8 p-2 gap-2'>
                 <div className='flex flex-row items-center gap-1'>

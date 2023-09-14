@@ -2,7 +2,7 @@ import './globals.css'
 import { Providers } from './providers'
 
 export const metadata = {
-  title: 'Leong Tin Jet',
+  title: 'Portfolio- Leong Tin Jet',
   description: 'I am Leong Tin Jet. Currently studying CSAI in Univeristy of Nottingham Malaysia ',
 }
 
