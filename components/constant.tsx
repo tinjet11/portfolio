@@ -28,15 +28,6 @@ export const projects: projectsProps[] = [
         type: "Web"
     },
     {
-        title: "My personal portfolio",
-        sourcecode: "https://github.com/tinjet11/portfolio",
-        livedemo: 'https://tinjet.vercel.app',
-        feature: ["Introduction about me", "Showcase my skills", "Showcase my projects", "Showcase my experience"],
-        tag: ["Next.JS", "Typescript", "Tailwind CSS", "HeadlessUi"],
-        cover: "/project/computer.svg",
-        type: "Web"
-    },
-    {
         title: 'Premium Car Rental Booking Website',
         sourcecode: "https://github.com/tinjet11/car_rental",
         feature: ["Add,Update & Delete Car Rental",
@@ -62,6 +53,14 @@ export const projects: projectsProps[] = [
         title: 'Product Price Checking App ',
         sourcecode: "https://github.com/tinjet11/telecell_price_checker",
         feature: ["Effortless Price Lookup", "Comprehensive Product Insights", "substantial improvement in business efficiency", " empowering sales personnel to promptly retrieve essential product details", " streamlining operations and reducing communication delays"],
+        tag: ["Flutter", "Mobile APP Development", "Clean architeture", "Bloc", "Dart"],
+        cover: "/project/mobile.svg",
+        type: "Mobile"
+    },
+    {
+        title: 'Nott A Student',
+        sourcecode: "https://github.com/tinjet11/Nott-A-Student",
+        feature: ["Project Under UNM Computer Science Society(Still under Development)", "All in one solution that solve student uni life problem", "Bus time Table Checking", "Student Timetable Checking", "Event demonstration Dashboard"],
         tag: ["Flutter", "Mobile APP Development", "Clean architeture", "Bloc", "Dart"],
         cover: "/project/mobile.svg",
         type: "Mobile"
@@ -101,37 +100,38 @@ export const skill_content = [
     },
 ]
 
-export const skill_content_text = 
+export const skill_content_text =
     [
-     'NextJs',
-     'React',
-     'HTML',
-     'CSS',
-     'Tailwind CSS',
-     "Flutter",
-     "Dart",
-     "Flutter Clean Architeture",
-     "Bloc",
-     "C",
-     "Express",
-     "MongoDB",
-     "Rest API",
-     "JavaScript",
-     "Typescript",
-     "Java",
-     "NodeJs",
-     "PHP",
-
+        'NextJs',
+        'React',
+        'HTML',
+        'CSS',
+        'Tailwind CSS',
+        "Flutter",
+        "Dart",
+        "Flutter Clean Architeture",
+        "Bloc",
+        "C",
+        "Express",
+        "MongoDB",
+        "Rest API",
+        "JavaScript",
+        "Typescript",
+        "Java",
+        "NodeJs",
+        "PHP",
     ]
-    
+
 export const experience = [
     {
         organisation: 'Computer Science Society | University of Nottingham Malaysia',
         position: 'Head of Technology',
         date: 'May 2023 – Present',
         description: [
-            "Tech leader of Society Website & Nott A Student App",
-            "Assists in other events of the society"
+            "Developed society website and its content management system using Next.js",
+            "Leading as technical leader of project team",
+            "Utilized Clean Architecture in the flutter project",
+            "Use Bloc as state management solution"
         ],
     },
     {
