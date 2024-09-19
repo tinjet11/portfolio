@@ -76,13 +76,13 @@ const Nav = () => {
 
                     )} */}
                 </div>
-                <div className="nav_right_item">
+{/*                 <div className="nav_right_item">
                     <div className='flex flex-row items-center gap-1 '>
                         <Icons.download />
                         <Link href={"/Resume-LeongTinJet.pdf"} target="_blank">Resume</Link>
                     </div>
 
-               {/*      <div className='flex flex-row items-center gap-1'>
+             <div className='flex flex-row items-center gap-1'>
                         {
                             theme === "light-grey" ?
                                 <Icons.sun /> : <Icons.moon />
@@ -90,8 +90,8 @@ const Nav = () => {
                         <button onClick={() => theme === "light-grey" ? setTheme("dark") : setTheme("light-grey")}>
                             Theme
                         </button>
-                    </div> */}
-                </div>
+                    </div> 
+                </div> */}
 
             </div>
 

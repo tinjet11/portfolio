@@ -44,3 +44,10 @@ https://realtimecolors.com/?colors=000000-ffffff-43b1b1-cfdeed-183f2c */
 }
 
 
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+

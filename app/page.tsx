@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <Nav />
+       <Nav />
         <Profile />
         <div className="mx-auto max-w-[1140px] mt-8">
-          <Experience />
-          <Skills />
           <Project />
+         {/*  <Experience /> */}
+          <Skills />
           <Contact />
         <Footer />
         </div>

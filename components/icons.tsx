@@ -7,6 +7,7 @@ import {
     Loader,
     MailCheck,
     ScreenShare,
+    VideoIcon,
     type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -20,6 +21,7 @@ export const Icons = {
     loader: Loader,
     mail: MailCheck,
     livedemo: ScreenShare,
+    videoIcon: VideoIcon,
     gitHub: ({ ...props }: LucideProps) => (
         <svg
             aria-hidden="true"
